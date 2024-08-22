@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Important",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,12 +148,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3cf2ac838fde0db",
+  "active": "055ade0f731496aa",
   "lastOpenFiles": [
+    "截屏2024-08-22 20.00.32.png",
     "截屏2024-08-22 14.22.01.png",
     "截屏2024-08-22 14.21.33.png",
-    "AI/数学基础.md",
     "AI/AI-Study.md",
+    "AI/数学基础.md",
     "AI/MachineLearning.md",
     "2024-08-22.md",
     "Untitled.md",
