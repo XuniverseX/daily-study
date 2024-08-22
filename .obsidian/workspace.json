@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "b93772a13fc8ef56",
+    "type": "split",
+    "children": [
+      {
+        "id": "0bd5af37df1fdf5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e143018a0c53fa53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/AI-Study.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8061babe975c5078",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fa61dc9d0f7f2a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49b7c4169b2ef75e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "055ade0f731496aa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "97a65c936bbd679f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a41fc2f360150da5",
+    "type": "split",
+    "children": [
+      {
+        "id": "0079e343ee2cd54b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "771b1411ca32580d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AI/AI-Study.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e3cf2ac838fde0db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AI/AI-Study.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d647806dd59e4ff9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ba272aa0d3589d61",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AI/AI-Study.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e3cf2ac838fde0db",
+  "lastOpenFiles": [
+    "截屏2024-08-22 14.22.01.png",
+    "截屏2024-08-22 14.21.33.png",
+    "AI/数学基础.md",
+    "AI/AI-Study.md",
+    "AI/MachineLearning.md",
+    "2024-08-22.md",
+    "Untitled.md",
+    "AI"
+  ]
+}

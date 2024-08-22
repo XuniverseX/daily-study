@@ -1,0 +1,114 @@
+[[数学基础]]
+# MachineLearning
+
+## 回归算法
+
+### 多元线性回归
+
+```python
+from sklearn import datasets  
+from sklearn.model_selection import train_test_split  
+from sklearn.linear_model import LinearRegression  
+from sklearn.metrics import mean_squared_error  
+  
+# 加载糖尿病数据集  
+diabetes = datasets.load_diabetes()  
+X = diabetes.data  
+y = diabetes.target  
+  
+# 将数据集划分为训练集和测试集  
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.2)  
+  
+# 创建一个多元线性回归算法对象  
+lr = LinearRegression()  
+  
+# 使用训练集训练模型  
+lr.fit(X_train, y_train)  
+  
+# 使用测试集进行预测  
+y_pred_train = lr.predict(X_train)  
+y_pred_test = lr.predict(X_test)  
+  
+# 打印模型的均方差  
+print('均方误差：%.2f' % mean_squared_error(y_train, y_pred_train))  
+print('均方误差：%.2f' % mean_squared_error(y_test, y_pred_test))
+```
+
+### 逻辑回归
+
+二分类任务算法，适用于MultiLabel模型，将多分类问题转化为多个二分类，因为每个二分类之间是相互独立的
+
+### SoftMax回归
+
+多分类任务算法，适合MultiClass模型，因为互斥就是各类别概率之和必须为1
+
+### MultiClass与MultiLabel
+
+- Multi-Class中每个Class之间是互斥的，如一个分类是猫就不能是狗和鸟，适用于图像分类等场景
+- Multi-Label中每个实例可以有多个Label，如文本分类，一篇文章可以既属于科技分区又属于健康分区
+```python
+from sklearn import datasets  
+from sklearn.model_selection import train_test_split  
+from sklearn.linear_model import LogisticRegression  
+from sklearn.metrics import accuracy_score  
+  
+iris = datasets.load_iris()  
+X = iris.data  
+y = iris.target  
+# print(X)  
+# print(y)  
+  
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)  
+  
+# 创建一个逻辑回归对象，这里逻辑回归会根据我们的数据决定是用二分类还是多分类  
+  
+lr = LogisticRegression(max_iter=1000)  
+# lr = LogisticRegression(multi_class='ovr')  # 二分类  
+# lr = LogisticRegression(multi_class='multinomial')  # Softmax回归  
+  
+lr.fit(X_train, y_train)  
+  
+y_pred = lr.predict(X_test)  
+  
+print('准确率: %.2f' % accuracy_score(y_test, y_pred))
+```
+
+## 损失函数
+
+### 欠拟合与过拟合
+
+![[截屏2024-08-22 14.21.33.png]]
+
+### 正则化
+
+正则化的目标是保持模型简单，以避免过拟合
+
+$$Loss=BaseLoss+Penalty$$
+
+- 回归任务
+
+$$Loss=\underset{MSE}{\underline{MeanSquareError}}+Penalty$$
+
+- 二分类任务
+
+$$Loss=\underset{二分类交叉熵}{\underline{BinaryCrossEntropy}}+Penalty$$
+
+- 多分类任务
+
+$$Loss=\underset{多分类交叉熵}{\underline{MultiClassCrossEntropy}}+Penalty$$
+
+##### L1、L2正则项
+
+- L1正则项
+$$Loss=BaseLoss+L1$$
+L1 正则化是指在损失函数中加入 L1 范数，计算公式为
+$$\lambda\sum_{i=1}^{n}\left| w_i \right|$$
+L1正则化的优点是可以减少特征数量，所以可以避免过拟合。缺点是可能会过度惩罚某些特征，使得一些有用的特征被舍弃。
+
+
+- L2正则项
+$$Loss=BaseLoss+L2$$
+L2 正则项会将所有系数的权重都变得较小，但不为 0。
+
+$$\lambda\sum_{i=1}^{n} w_i^2 $$
+L1正则化的优点是可以降低所有特征的权重，防止过拟合。缺点是不会减少特征的数量，因此不能用于特征选择。
