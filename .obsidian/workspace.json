@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Important",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "055ade0f731496aa",
+  "active": "e143018a0c53fa53",
   "lastOpenFiles": [
+    "截屏2024-08-23 14.42.50.png",
+    "截屏2024-08-23 14.33.41.png",
+    "截屏2024-08-23 14.20.39.png",
     "截屏2024-08-22 20.00.32.png",
     "截屏2024-08-22 14.22.01.png",
     "截屏2024-08-22 14.21.33.png",
